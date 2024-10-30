@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeBites</title>
+    <!-- Favicon Link -->
+    <link rel="icon" href="https://lh3.googleusercontent.com/pw/AP1GczN3dqli4E6AYA_Tzp9HURJeo7wMvmcmikW6HlXw_Z1RsbxkYO-QllFsSOwaSjJ5tedKmc-UWB-r_KIcT7XjApz1GT--vHUlEPfGkONDx4XckllOUQ=s128-p-k" type="image/png" sizes="16x16">
+    <style>
+        /* General styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e5e5d0;
+            overflow: hidden; /* Prevent scrollbars from appearing on the body */
+        }
 
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px; /* Adjusted padding for a cleaner look */
+            background-color: #d3d8c8;
+            position: fixed; /* Make header fixed */
+            top: 0; /* Stick to the top */
+            left: 0; /* Align left */
+            right: 0; /* Align right */
+            z-index: 1000; /* Sit on top */
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 80px; /* Increased height to fit header */
+            width: 110px; /* Increased width to maintain aspect ratio */
+            margin-right: 10px; /* Space between logo and text */
+        }
+
+        nav a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 18px; /* Increased font size */
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #8B0000; /* Dark red on hover */
+        }
+
+        /* Main content styling */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 80px; /* Space for fixed header */
+            height: 100vh; /* Full viewport height */
+        }
+
+        section {
+            height: 100vh; /* Each section takes full height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #4a4a32;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        /* Background colors for each section */
+        .section1 {
+            background-color: #ffcccc; /* Light red */
+        }
+
+        .section2 {
+            background-color: #ccffcc; /* Light green */
+        }
+
+        .section3 {
+            background-color: #ccccff; /* Light blue */
+        }
+
+        /* Search bar styling */
+        .search-container {
+            margin-top: 20px;
+        }
+
+        .search-container input[type="text"] {
+            padding: 10px;
+            width: 300px; /* Width of the search input */
+            border: 1px solid #ccc; /* Light border */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .search-container button {
+            padding: 10px 15px; /* Padding for the button */
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor */
+            margin-left: 10px; /* Space between input and button */
+        }
+
+        .search-container button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Clickable logo linked to homepage -->
+            <a href="index.html">
+                <img src="updated logo 2.png" alt="Logo" />
+            </a>
+        </div>
+        <nav>
+            <a href="login.html">Login</a>
+            <a href="about.html">About Us</a>
+            <a href="restaurant-details.html">Restaurant Details</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="section1">
+            <h1>Taste the Joy of Safe Eating!</h1>
+            <p>Enter your allergy and start your journey to safe dining:</p>
+            <div class="search-container">
+                <input type="text" placeholder="Search for your allergy..." />
+                <button type="button">Search</button>
+            </div>
+        </section>
+        
+        <section class="section2">
+            <h1>Our Commitment</h1>
+            <p>We ensure a safe dining experience for all food allergy sufferers.</p>
+        </section>
+        
+        <section class="section3">
+            <h1>Explore Restaurants</h1>
+            <p>Find restaurants that cater to your dietary needs and preferences.</p>
+        </section>
+    </main>
+</body>
+</html>
